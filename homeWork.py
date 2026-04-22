@@ -1,3 +1,4 @@
+
 # Task No1 (BMİ Hesablayıcı ):
 
 height = float(input("Boyun: "))
@@ -109,3 +110,47 @@ else:
     mebleg = 100 * 0.06 + 200 * 0.10 + (istehlak - 300) * 0.14
 
 print(f"Cəm məbləğ: {mebleg} AZN")
+
+
+# +===================================================================
+# +===================================================================
+# +===================================================================
+
+# Star triangle:
+
+value = int(input("Dəyər daxil et:"))
+for r in range(1, value + 1):
+    for space in range(value - r):
+        print(" ", end="")
+    
+    for star in range(2 * r - 1):
+        print("*", end="")
+    print()
+
+# Calculator:
+
+try:
+    value1 = int(input("Dəyər daxil et: "))
+    operator = input("Operator daxil edin (+ - * / % **): ")
+    value2 = int(input("Dəyər daxil et: "))
+    if operator == "+":
+        print(f"Cavab: {value1 + value2}")
+    elif operator == "-":
+        print(f"Cavab: {value1 - value2}")
+    elif operator == "*":
+        print(f"Cavab: {value1 * value2}")
+    elif operator == "/":
+        print(f"Cavab: {value1 / value2}")
+    elif operator == "%":
+        print(f"Cavab: {value1 % value2}")
+    elif operator == "**":
+        print(f"Cavab: {value1 ** value2}")
+    else:
+        print("Şərt ödənilmədi!")
+except Exception as e:
+    print(f"Xəta: {e}")
+print("=====================================")
+
+# +===================================================================
+# +===================================================================
+# +===================================================================
